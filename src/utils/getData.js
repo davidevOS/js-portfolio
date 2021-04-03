@@ -1,4 +1,6 @@
-const API = 'https://randomuser.me/api/';
+// const API = 'https://randomuser.me/api/';
+// Traemos la variable directamente del archivo .env
+const API = process.env.API;
 
 const getData = async (id) => {
   const apiURl = id ? `${API}${id}` : API;
